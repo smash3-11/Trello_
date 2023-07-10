@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trello</title>
+    <!-- <link rel="icon" id="favicon" href="/icon/favicon.ico"> -->
+    <link rel="icon" href="./icons/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/align-top.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/push-chevron-down.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/trash.css">
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <a href="#">
+                <img class="logo" src="icons/trello.svg" alt="wepro">
+            </a>
+
+            <nav class="menu">
+                <a href="#">Workspace </a>
+                <a href="#">Recent</a>
+                <a href="#">Stared</a>
+            </nav>
+        </div>
+        <div class="btn_box">
+        </div>
+        <div class="centre">
+            <button class="create">Create</button>
+            <form action="#">
+                <input type="text" placeholder="Search..">
+            </form>
+        </div>
+        <div class="right">
+            <div class="social">
+                <a href="#">
+                    <img src="icons/326659_info_icon.png" alt="info">
+                </a>
+                <a href="#">
+                    <img src="icons/4781824_alarm_alert_attention_bell_clock_icon (1).png" alt="alert">
+                </a>
+            </div>
+
+
+            <div >
+                <img src="icons/avatar_icon (1).png" alt="account">
+            </div>
+
+
+
+        </div>
+
+    </header>
+
+    <div class="team_board">
+        <div class="right">
+            <div class="board">
+                <!-- <i class="gg-push-chevron-down"></i> -->
+                <button><span></span> Board</button>
+            </div>|
+            <div class="t_star">
+                Team board 
+                <button> ✰</button>
+            </div>|
+            <div class="acme">
+                <button>Acme, Inc.</button>
+            </div>|
+            <div class="ex">
+                <div class="el">
+                    <img src="./icons/icon10.png" alt="">
+                </div>
+                <div class="el">
+                    <img src="./icons/icon2.png" alt="">
+                </div>
+                <div class="el">
+                    <img src="./icons/icon7.png" alt="">
+                </div>
+                <div class="td">+7</div>
+            </div>
+
+        </div>
+        <div class="left">
+            <div class="inv_btn" id="open_add_modal">
+                <button>Invite</button>
+            </div>
+            <div class="toch">
+                <p>...</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+
+
+        <div class="todos">
+            <div class="c">
+                <h2 id="title" contenteditable="true">To do</h2>
+                <div id="0" class="empty">
+                </div>
+                <p class="pl"> + Add a card</p>
+            </div>
+
+            <div class="c">
+                <h2 id="title" contenteditable="true">Doing</h2>
+                <div id="1" class="empty">
+                </div>
+                <p class="pl"> + Add a card</p>
+            </div>
+
+            <div class="c">
+                <h2 id="title" contenteditable="true">Done</h2>
+                <div id="2" class="empty">
+                </div>
+                <p class="pl"> + Add a card</p>
+            </div>
+
+            <div class="trash" dropzone="">
+                <?xml version="1.0" encoding="utf-8"?>
+                <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="56.75px" height="73.25px"
+                    viewBox="0 0 56.75 73.25" enable-background="new 0 0 56.75 73.25" xml:space="preserve">
+                    <path fill="#000"
+                        d="M44.396,30.938l-1.944,34.719v0.086v0.084c0,0.509-0.34,0.848-0.848,0.848H17.879
+                            c-0.508,0-0.847-0.339-0.847-0.848v-0.084v-0.086l-1.863-34.655L44.396,30.938z M15.083,29.391h-3.474l2.032,36.435
+                            c0,2.371,1.865,4.236,4.237,4.236h23.726c2.373,0,4.236-1.865,4.236-4.236l2.033-36.435h-3.391H15.083z" />
+                    <path class="cover" fill="#000"
+                        d="M41.5,9.546c-0.049-0.069-0.098-0.139-0.146-0.208L40.046,7.46c-1.356-1.946-3.952-2.41-5.897-1.052
+                            l-6.256,4.362l-1.454-2.085c-1.356-1.946-3.952-2.41-5.897-1.053l-9.73,6.785C8.863,15.775,8.4,18.37,9.757,20.316l1.454,2.085
+                            l-6.255,4.361c-1.947,1.357-2.41,3.952-1.053,5.899l1.309,1.876c0.048,0.069,0.097,0.139,0.145,0.208L41.5,9.546z M12.538,18.377
+                            c-0.291-0.417-0.208-0.888,0.21-1.179l9.73-6.785c0.417-0.29,0.889-0.207,1.18,0.211l1.455,2.084l-11.121,7.754L12.538,18.377z" />
+                    <path class="lines" id="three" fill="#000" d="M36.518,29.391l-0.847,30.419c0,0.932,0.679,1.692,1.608,1.778c0,0,0,0,0.086,0
+                            c0.932,0,1.695-0.764,1.695-1.608l0.847-30.589H36.518z" />
+                    <path class="lines" id="two" fill="#000"
+                        d="M28.046,29.391v30.503c0,0.932,0.762,1.694,1.694,1.694c0.932,0,1.695-0.764,1.695-1.694V29.391H28.046z" />
+                    <path class="lines" id="one" fill="#000" d="M19.573,29.391l0.848,30.589c0,0.932,0.763,1.608,1.695,1.608c0,0,0,0,0.084,0
+                            c0.932,0,1.695-0.764,1.61-1.778l-0.847-30.419H19.573z" />
+                </svg>
+            </div>
+            <audio class="audio">
+                <source src="./audio/delete-sound.mp3" type="audio/mp3">
+            </audio>
+        </div>
+
+
+        <!-- <div class="modal"> -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <form id="form" action="#">
+                    <p>Напишите задачу</p>
+                    <input type="text" name="name" required>
+
+                    <p>Описание этой задачи</p>
+                    <textarea name="description"></textarea>
+
+                    <p>Выберите участников команды</p>
+                    <!-- <select name="executors" multiple aria-setsize="10" id="executors" ></select> -->
+                    <div class="multiSelect">
+                        <select id="executors" name="executors">
+                            <option disabled selected></option>
+                        </select>
+                        <div class="selected-items">
+
+                        </div>
+                    </div>
+
+                    <p>Выберите статус</p>
+                    <select name="status">
+                        <option value="0">To do</option>
+                        <option value="1">Doing</option>
+                        <option value="2">Done</option>
+                    </select>
+
+
+                    <p>Выберите дедлайн</p>
+                    <input type="date" name="deadline"> <br>
+
+                    <div class="btn-cont">
+                        <button type="submit" id="new">Создать задачу</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- </div> -->
+
+
+        <div id="change-modal" class="change-modal">
+            <div class="modal-content">
+                <form id="change-form" action="#">
+                    <p>Напишите задачу</p>
+                    <input id="name" type="text" name="name" required>
+
+                    <p>Описание этой задачи</p>
+                    <textarea id="description" name="description"></textarea>
+
+                    <p>Выберите участников команды</p>
+                    <div class="multiSelect multiSel">
+                        <select id="executors" name="executors">
+                            <option disabled selected></option>
+                        </select>
+                        <div class="change__selected-items">
+
+                        </div>
+                    </div>
+
+                    <p>Выберите статус</p>
+                    <select id="status" name="status">
+                        <option value="0">To do</option>
+                        <option value="1">Doing</option>
+                        <option value="2">Done</option>
+                    </select>
+
+
+                    <p>Выберите дедлайн</p>
+                    <input id="deadline" type="date" name="deadline"> <br>
+
+                    <div class="btn-cont">
+                        <button type="submit" id="save">Сохранить</button>
+                        <button type="reset" id="cancel">Отмена</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+        <!-- ADD MODAL -->
+        <div id="add_modal" class="add_modal">
+
+            <div class="add_modal-content">
+                <span class="close" id="close">&times;</span>
+
+                <form id="add-form" action="#">
+
+                    <h2 class="add_title">Добавить нового пользователя</h2>
+
+                    <div class="add-executors">
+                        <label for="name">Имя пользователя:</label>
+                        <input type="text" id="name" name="name" required placeholder="Имя">
+                    </div>
+
+                    <div class="add-executors">
+                        <label for="profession">Профессия:</label>
+                        <select id="profession" name="profession" required>
+                            <option value="" selected disabled hidden>Выберите исполнителя</option>
+                            <option value="Developer">Developer</option>
+                            <option value="Designer">Designer</option>
+                            <option value="Project Manager">Project Manager</option>
+                            <option value="Content Writer">Content Writer</option>
+                        </select>
+                    </div>
+
+                    <div class="add-executors">
+                        <span class="add-ava">Аватарка: </span><span class="im">&ast;</span>
+                        <div class="icons-container">
+                            <div class="icon" data-icon="icon1.png"></div>
+                            <div class="icon" data-icon="icon2.png"></div>
+                            <div class="icon" data-icon="icon3.png"></div>
+                            <div class="icon" data-icon="icon4.png"></div>
+                            <div class="icon" data-icon="icon5.png"></div>
+                            <div class="icon" data-icon="icon6.png"></div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-submit">Добавить</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
